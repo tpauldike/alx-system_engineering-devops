@@ -1,2 +1,2 @@
 #!/bin/bash
-mkdir -vm751 mk_dir .
+mkdir -m751 mk_dir .
