@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod ugo+x $(-type d)
+chmod +111 $(path/to/base/dir -type d)
