@@ -1,2 +1,2 @@
 #!/bin/bash
-chown -hR reference=betty hello
+find . -user guillaume -exec chown betty hello
