@@ -1,0 +1,5 @@
+0 string SCHOOL School data
+!:mime School
+
+After entering these, save the file and close the editor, then enter the command that follows:
+file -C -m school.mgc
