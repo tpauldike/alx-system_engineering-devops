@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# The script prints "Best School" 10 times but is implemented with a while loop
+n=0
+until [ $n -eq 10 ]
+do
+	echo "Best School"
+	(( n++ ))
+done
