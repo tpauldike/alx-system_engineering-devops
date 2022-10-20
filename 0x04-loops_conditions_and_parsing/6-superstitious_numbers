@@ -5,13 +5,16 @@ while [ $n -le 20 ]
 do
     case $n in
 	4)
-	    echo -e "$n\nbad luck from China"
+	    echo $n
+	    echo "bad luck from China"
 	    ;;
 	9)
-	    echo -e "$n\nbad luck from Japan"
+	    echo $n
+	    echo "bad luck from Japan"
 	    ;;
 	17)
-	    echo -e "$n\nbad luck feom Italy"
+	    echo $n
+	    echo "bad luck feom Italy"
 	    ;;
 	*)
 	    echo $n
