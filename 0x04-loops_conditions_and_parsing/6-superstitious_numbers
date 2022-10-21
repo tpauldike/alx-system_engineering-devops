@@ -8,15 +8,9 @@ while [ $n -le 20 ]
 do
     echo $n
     case $n in
-	4)
-	    echo "bad luck from China"
-	    ;;
-	9)
-	    echo "bad luck from Japan"
-	    ;;
-	17)
-	    echo "bad luck feom Italy"
-	    ;;
+	4) echo "bad luck from China";;
+	9) echo "bad luck from Japan";;
+	17) echo "bad luck feom Italy";;
     esac
     (( n++ ))
 done
