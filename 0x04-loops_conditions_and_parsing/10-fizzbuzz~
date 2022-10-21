@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-for (( num=1; num <= 100; num++))
-do
-    if (( $num % 3 = 0 ))
-    then
-        echo "Fizz"
-    else
-        echo "$num"
-done
