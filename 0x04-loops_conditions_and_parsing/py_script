@@ -1,0 +1,16 @@
+#!/usr/bin/env python3
+'''
+for Hour in range(0, 13):
+    print("Hour:", Hour)
+    for Minute in range(1, 60):
+    	print(Minute)
+'''
+
+hour = 0
+while (hour <= 12):
+    print("Hour:", hour)
+    minute = 1
+    while (minute <= 59):
+        print(minute)
+        minute += 1
+    hour += 1
