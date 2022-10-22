@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# This displays the string indefinitely with 2 secs sleep between each iteration
+for (( n=1; n > 0; n++ ))
+do
+    echo "To infinity and beyond"
+    sleep 2
+done
