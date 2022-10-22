@@ -1,3 +1,7 @@
-Working with Emacs for the first time
-The repository is about me journeying through the basics of shell
-Contained in the repo are works on shell basics, shell permissions, shell redirections, shell variables and expansions, ALX System Engineering (devops)
+# The foundations of devops
+The repository is about me journeying through the basics of system engineering - devops - under the auspieces of ALX
+
+Contained in the repo are the following projects:
+| Project Title | About the Project |
+------
+| [0x00-shell_basics](./0x00-shell_basics) | How to use shell programs |
