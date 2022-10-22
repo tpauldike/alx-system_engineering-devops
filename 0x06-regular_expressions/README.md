@@ -1,7 +1,7 @@
 # 0x06. Regular expression
 A project that further strengthened my foundation in system engineering - devops
 ## General Requirements
-- Allowed editors: `vi`, `vim, `emacs`
+- Allowed editors: `vi`, `vim`, `emacs`
 - All your files will be interpreted on Ubuntu 20.04 LTS
 - All your files should end with a new line
 - A `README.md` file, at the root of the folder of the project, is mandatory
@@ -24,6 +24,6 @@ School$
 sylvain@ubuntu$ ./0-simply_match_school.rb "School Best School" | cat -e
 SchoolSchool$
 sylvain@ubuntu$ ./0-simply_match_school.rb "Grace Hopper" | cat -e
-$```
-
+$
+```
 #### 1. Repetition Token #0
