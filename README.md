@@ -19,6 +19,5 @@ Contained in the repo are the following projects:
 | [0x0B-ssh](./0x0B-ssh) | Secure Shell connections, how to generate and use ssh key pair |
 | [0x0C-web_server](./0x0C-web_server) | About servers and web servers |
 | [0x11-google.com](./0x11-what_happens_when_your_type_google_com_in_your_browser_and_press_enter) | What happens when you type *https://www.google.com* in your browser and press *Enter*.
-
 `DNS request` `TCP/IP` `Firewall` `HTTPS/SSL` `Database` and more |
 | [0x13-firewall](./0x13-firewall) | Installation and configuration of `firewall` on the server, port forwarding |
