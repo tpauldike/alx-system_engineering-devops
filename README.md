@@ -14,9 +14,11 @@ Contained in the repo are the following projects:
 | [0x06-regular_expression](./0x06-regular_expression) | Writing regex in `ruby` scripts |
 | [0x07-networking_basics](./0x07-networking_basics) | The basics of networking; what `netstat` and `ping` is about |
 | [0x08-networking_basics_2](./0x08-networking_basics_2) | Learning about `localhost` |
-| [0x09. Web infrastructure design](./0x09. Web infrastructure design) | DNS, monitoring, web server, network basics, load balancer, server |
-| [0x0A. Configuration management](./0x0A. Configuration management) | Configuration Management: Using `puppet` to automate certain configurations |
+| [0x09-web_infrastructure_design](./0x09-web_infrastructure_design) | DNS, monitoring, web server, network basics, load balancer, server |
+| [0x0A-configuration_management](./0x0A-configuration_management) | Configuration Management: Using `puppet` to automate certain configurations |
 | [0x0B-ssh](./0x0B-ssh) | Secure Shell connections, how to generate and use ssh key pair |
 | [0x0C-web_server](./0x0C-web_server) | About servers and web servers |
-| [0x11-google.com](./0x11-what_happens_when_your_type_google_com_in_your_browser_and_press_enter) | What happens when you type *https://www.google.com* in your browser and press *Enter*: `DNS request` `TCP/IP` `Firewall` `HTTPS/SSL` `Database` and more |
+| [0x11-google.com](./0x11-what_happens_when_your_type_google_com_in_your_browser_and_press_enter) | What happens when you type *https://www.google.com* in your browser and press *Enter*.
+
+`DNS request` `TCP/IP` `Firewall` `HTTPS/SSL` `Database` and more |
 | [0x13-firewall](./0x13-firewall) | Installation and configuration of `firewall` on the server, port forwarding |
