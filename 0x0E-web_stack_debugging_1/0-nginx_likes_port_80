@@ -1,3 +1,6 @@
 #!/bin/env bash
+# The script creates a symbolic link (ln -s) that deletes
+# ../sites-enabled/default (ln -f) and replaces it with a copy of
+# ../sites-available/default
 sudo ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
 sudo service nginx restart
