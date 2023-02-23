@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# The script prints "Best School" 10 times but is implemented with a while loop
+n=1
+while [ $n -le 10 ]
+do
+	echo "Best School"
+	if [ $n -eq 9 ];
+	   then
+	       echo "Hi"
+	fi
+	(( n++ ))
+done
