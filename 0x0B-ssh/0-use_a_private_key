@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-# connecting to my server on the intranet using private key
-ssh -i ~/.ssh/school ubuntu@54.237.225.83
