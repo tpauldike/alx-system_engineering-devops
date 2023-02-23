@@ -1,2 +1,2 @@
-I really wish I have the full understanding of what I was asked to do here.
-Maybe I am yet to be conversant with the basic terminologies used here.
+# Shell Basics
+Here is the very first work I had to do on System Engineering
