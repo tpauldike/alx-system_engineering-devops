@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# The script prints "Best School" 10 times but is implemented with a while loop
+n=1
+while [ $n -le 10 ]
+do
+    if [ $n -eq 4 ];
+    then
+	echo "bad luck"
+    elif [ $n -eq 8 ];
+    then
+	echo "good luck"
+    else
+	echo "Best School"
+    fi
+    (( n++ ))
+done
