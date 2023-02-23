@@ -1,4 +1,4 @@
-# 0x04. Loops, conditions and parsing
+# Loops, conditions and parsing
 ## General Objectives:
 - How to create SSH keys
 - What is the advantage of using `#!/usr/bin/env bash` over `#!/bin/bash`
