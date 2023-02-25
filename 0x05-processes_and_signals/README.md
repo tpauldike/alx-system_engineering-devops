@@ -1,11 +1,11 @@
-# 0x05. Processes and signals
+# Processes and signals
 This project was about `DevOps`, `Shell`, `Bash`, `Syscall` and `Scripting`
 
 It had 12 mandatory tasks that helped me gain some practical knowledge about
 how to control certain processes in a Linux OS by sending signals
 using bash scripts.
 
-## Tasks
+## Mandatory Tasks
 ### 0. What is my PID
 A Bash script that displays its own PID
 
@@ -34,3 +34,18 @@ Requirements:
 - You cannot use `kill` or `killall`
 
 ### 7. Highlander
+A Bash script that displays:
+
+- `To infinity and beyond` indefinitely
+- With a `sleep 2` in between each iteration
+- `I am invincible!!!` when receiving a SIGTERM signal
+
+Make a copy of your `6-stop_me_if_you_can` script, name it `67-stop_me_if_you_can`, that kills the `7-highlander` process instead of the `4-to_infinity_and_beyond` one.
+
+### 8. Beheaded process
+A Bash script that kills the process `7-highlander`.
+
+## Advanved Tasks
+### 9. Process and PID file
+### 10. Manage my process
+### 11. Zombie
