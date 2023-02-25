@@ -1,0 +1,24 @@
+;; This buffer is for text that is not saved, and for Lisp evaluation.
+;; To create a file, visit it with C-x C-f and enter text in its buffer.
+
+#!/usr/bin/env bash
+# A bash script that:
+# creates a file /var/run/myscript.pid containing the script PID.
+# displays "To infinity and beyond" indefinitely
+# displays "I hate the kill command" upon receiving a SIGTERM
+# displays "Y U no love me?!" upon receiving a SIGINT
+# deletes the file /var/run/myscript.pid and terminates upon
+#+  receiving a SIGQUIT or SIGTERM.
+terminator() {
+  rm /var/run/myscript.pid
+  exit
+}
+echo "$$" > /var/run/myscript.pid
+while true
+do
+  echo "To infinity and beyond"
+  sleep 2
+  trap 'echo "Y U no love me?!"' SIGINT
+  trap 'echo "I hate the kill command" && terminator' SIGTERM
+  trap 'terminator' SIGQUIT
+done
