@@ -1,22 +1,51 @@
-# The Foundations of DevOps
-The repository is about me journeying through the basics of system engineering - devops - under the auspieces of ALX
+# Processes and signals
+This project was about `DevOps`, `Shell`, `Bash`, `Syscall` and `Scripting`
 
-Contained in the repo are the following projects:
+It had 12 mandatory tasks that helped me gain some practical knowledge about
+how to control certain processes in a Linux OS by sending signals
+using bash scripts.
 
-| Project Title | About the Project |
-| -------- | -------- |
-| [0x00-shell_basics](./0x00-shell_basics) | How to use shell programs, such as; ls, cd, touch, mkdir... |
-| [0x01-shell_permissions](./0x01-shell_permissions) | Understanding commands such as chown, chmod, chgrp |
-| [0x02-shell_redirections](./0x02-shell_redirections) | Learning how to redirect between `stdin`, `stdout` and `stderr` |
-| [0x03-shell_variables_expansions](./0x03-shell_variables_expansions) | Learning about environment (global/local) variables, alias ... |
-| [0x04-loops_conditions_and_parsing](./0x04-loops_conditions_and_parsing) | A deep dive into bash scripting |
-| [0x05-processes_and_signals](./0x05-processes_and_signals) | About Linux PID, Linux processes and Linux signal |
-| [0x06-regular_expression](./0x06-regular_expression) | Writing regex in `ruby` scripts |
-| [0x07-networking_basics](./0x07-networking_basics) | The basics of networking; what `netstat` and `ping` is about |
-| [0x08-networking_basics_2](./0x08-networking_basics_2) | Learning about `localhost` |
-| [0x09-web_infrastructure_design](./0x09-web_infrastructure_design) | DNS, monitoring, web server, network basics, load balancer, server |
-| [0x0A-configuration_management](./0x0A-configuration_management) | Configuration Management: Using `puppet` to automate certain configurations |
-| [0x0B-ssh](./0x0B-ssh) | Secure Shell connections, how to generate and use ssh key pair |
-| [0x0C-web_server](./0x0C-web_server) | About servers and web servers |
-| [0x11-google.com](./0x11-what_happens_when_your_type_google_com_in_your_browser_and_press_enter) | What happens when you type *https://www.google.com* in your browser and press *Enter*. `DNS request` `TCP/IP` `Firewall` `HTTPS/SSL` `Database` and more |
-| [0x13-firewall](./0x13-firewall) | Installation and configuration of `firewall` on the server, port forwarding |
+## Mandatory Tasks
+### 0. What is my PID
+A Bash script that displays its own PID
+
+### 1. List your processes
+A Bash script that displays a list of currently running processes.
+
+### 2. Show your Bash PID
+A Bash script that displays lines containing the `bash` word, thus allowing the user to easily get the PID of the Bash process.
+
+### 3. Show your Bash PID made easy
+A Bash script that displays the PID, along with the process name, of processes whose name contain the word `bash`
+
+### 4. To infinity and beyond
+A Bash script that displays `To infinity and beyond` indefinitely.
+
+### 5. Don't stop me now!
+A Bash script that stops [4-to_infinity_and_beyond](./4-to_infinity_and_beyond) process.
+
+Requirements:
+- You must use `kill`
+
+### 6. Stop me if you can
+A Bash script that stops [4-to_infinity_and_beyond](./4-to_infinity_and_beyond) process.
+
+Requirements:
+- You cannot use `kill` or `killall`
+
+### 7. Highlander
+A Bash script that displays:
+
+- `To infinity and beyond` indefinitely
+- With a `sleep 2` in between each iteration
+- `I am invincible!!!` when receiving a SIGTERM signal
+
+Make a copy of your `6-stop_me_if_you_can` script, name it `67-stop_me_if_you_can`, that kills the `7-highlander` process instead of the `4-to_infinity_and_beyond` one.
+
+### 8. Beheaded process
+A Bash script that kills the process `7-highlander`.
+
+## Advanved Tasks
+### 9. Process and PID file
+### 10. Manage my process
+### 11. Zombie
