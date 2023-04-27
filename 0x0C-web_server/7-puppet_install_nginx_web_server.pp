@@ -1,16 +1,17 @@
-# Script to install nginx using puppet
+#!/usr/bin/env bash
+# Puppet manifest for nginx installation and some configurations
 
 package {'nginx':
   ensure => 'present',
 }
 
-exec {'install':
+exec {'install nginx':
   command  => 'sudo apt-get update ; sudo apt-get -y install nginx',
   provider => shell,
 
 }
 
-exec {'Hello':
+exec {'Home page':
   command  => 'echo "Hello World!" | sudo tee /var/www/html/index.html',
   provider => shell,
 }
@@ -19,7 +20,7 @@ exec {'sudo sed -i "s/listen 80 default_server;/listen 80 default_server;\\n\\tl
   provider => shell,
 }
 
-exec {'run':
+exec {'restart nginx':
   command  => 'sudo service nginx restart',
   provider => shell,
 }
