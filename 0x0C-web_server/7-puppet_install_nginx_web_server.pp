@@ -1,12 +1,11 @@
-#!/usr/bin/env bash
 # Puppet manifest for nginx installation and some configurations
 
 package {'nginx':
-  ensure => 'present',
+    ensure => 'present',
 }
 
-exec {'install nginx':
-  command  => 'sudo apt-get update ; sudo apt-get -y install nginx',
+exec {'install':
+  command  => 'sudo apt-get update -y ; sudo apt-get -y install nginx',
   provider => shell,
 
 }
