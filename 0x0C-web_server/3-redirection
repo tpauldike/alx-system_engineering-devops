@@ -8,21 +8,24 @@ echo "Hello World!" > /var/www/html/index.html
 
 new_website=\
 "server {
-        listen 80 default_server;
-        listen [::]:80 default_server;
-               root /var/www/html;
+        listen 80;
+        listen [::]:80;
+        
+        root /var/www/html;
         index index.html index.htm index.nginx-debian.html;
-        server_name _;
+        server_name tmaworldwide.tech;
         location / {
                 try_files \$uri \$uri/ =404;
         }
 
+        error_page   404  =  /404.html;
+        
         if (\$request_filename ~ redirect_me){
             rewrite ^ https://www.youtube.com/@tpauldike permanent;
         }
 }
 "
-echo "$new_website" > /etc/nginx/sites-available/default
+echo "$new_website" > /etc/nginx/sites-available/new_website
 if [ "$(pgrep nginx)" -le 0 ];
 then
     service nginx start
