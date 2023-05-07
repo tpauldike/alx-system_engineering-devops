@@ -20,11 +20,6 @@ new_website=\
                 try_files $uri $uri/ =404;
         }
 
-        error_page   404  =  /404.html;
-        location =  /404.html {
-                internal;
-        }
-
         if ($request_filename ~ redirect_me){
             rewrite ^ https://www.youtube.com/@tpauldike permanent;
         }
