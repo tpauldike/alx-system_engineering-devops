@@ -3,7 +3,7 @@ exec { 'update':
   command  => 'sudo apt-get update',
   provider => shell,
 }
--> package {'require nginx':
+-> package { 'require nginx':
   ensure => present,
 }
 -> file_line { 'add header':
