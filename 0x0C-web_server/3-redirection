@@ -1,35 +1,11 @@
 #!/usr/bin/env bash
-# Install the web server 'nginx' on the server and perform some configurations
-sudo apt-get update -y
-sudo apt-get upgrade -y
-sudo apt-get install nginx -y
-ufw allow 'Nginx HTTP'
-echo "Hello World!" > /var/www/html/index.html
+# Configure nginx in a new Ubuntu machine with a permanent redirect
 
-new_website=\
-"server {
-        listen 80;
-        listen [::]:80;
+sudo apt-get update
+sudo apt-get install -y nginx
 
-        server_name tmaworldwide.tech;
+echo "Hello World!" | sudo tee /var/www/html/index.html
+string_for_replacement="server_name _;\n\trewrite ^\/redirect_me https:\/\/https://youtube.com/@tpauldike permanent;"
+sudo sed -i "s/server_name _;/$string_for_replacement/" /etc/nginx/sites-enabled/default
 
-        root /var/www/html;
-        index index.html index.htm index.nginx-debian.html 404.html;
-        
-        location / {
-                try_files $uri $uri/ =404;
-        }
-
-        if ($request_filename ~ redirect_me){
-            rewrite ^ https://www.youtube.com/@tpauldike permanent;
-        }
-}"
-
-echo "$new_website" > /etc/nginx/sites-available/new_website
-
-if [ "$(pgrep nginx)" -le 0 ];
-then
-    sudo service nginx start
-else
-    sudo service nginx restart
-fi;
+sudo service nginx restart
