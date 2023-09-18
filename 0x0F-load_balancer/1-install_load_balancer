@@ -15,8 +15,8 @@ frontend tmaworldwide
 	default_backend tma_backend
 	backend tma_backend
 	balance roundrobin
-	server 52468-web-01 100.25.138.198:80 check
-	server 52468-web-02 54.146.14.176:80 check
+	server 52468-web-01 54.144.157.140 check
+	server 52468-web-02 54.144.134.137 check
 "
 echo "$my_config" | sudo tee -a /etc/haproxy/haproxy.cfg
 echo "ENABLED=1" | sudo tee -a /etc/default/haproxy
